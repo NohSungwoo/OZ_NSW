@@ -1,0 +1,27 @@
+*{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    background-color: skyblue;
+}
+
+body{
+    width: 400px;
+    margin: auto;
+}
+
+h1{
+    font-size: 48px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+p{
+    font-size: 1.2rem;
+}
