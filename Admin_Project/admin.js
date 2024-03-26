@@ -10,7 +10,38 @@
         
         const dataTable = document.getElementById('data-table')
         const date = document.getElementById('date')
+        const checkAll = document.getElementById('checkAll')
+        const deletBtn = document.getElementById('delete_btn')
+        
         date.innerHTML = `${now()}` 
+        checkAll.addEventListener("click", selectAll)         
+        
+        // deletBtn.onclick = deleteProduction
+
+        // function deleteProduction(rownum){
+        //     for(i=0; i<5; i++){
+        //         if(dataTable[i].getElementsByClassName("form-check-input").checked){
+        //             dataTable.deleteRow(rownum)
+        //         }
+        //     }
+        // }
+        
+        function selectone(){
+            addEventListener("click", dataTable[0])
+        }
+
+        // 체크박스 모두 고르기
+        function selectAll(){
+            if(document.getElementById("checkAll").checked==true){
+                for(i=1;i<5;i++){
+                    document.getElementsByClassName("form-check-input")[i].checked=true
+                }
+            }else{
+                for(i=1;i<5;i++){
+                    document.getElementsByClassName("form-check-input")[i].checked=false
+                }
+            }
+        }
 
         // YYYY-MM-DD 함수
         function now(){
