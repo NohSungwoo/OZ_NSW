@@ -128,4 +128,3 @@ def get_many_order() :
     cursor.close()
 
 get_many_order()
-
