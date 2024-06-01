@@ -1,3 +1,5 @@
+# 웹 서버는 Python으로 되어 있지 않기 때문에
+# Python 기반의 프레임 워크인 django와 소통해줄 중간 개체가 필요하다.
 """
 ASGI config for config project.
 

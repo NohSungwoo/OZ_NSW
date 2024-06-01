@@ -1,3 +1,2 @@
 from django.shortcuts import render
-
-# Create your views here.
+# config.urls.py를 통해 views에 선언된 함수를 실행한다.
