@@ -33,17 +33,24 @@ ALLOWED_HOSTS = []
 
 # Application definition
 # 생성한 app들을 명시해 주어야 사용 가능하다.
-INSTALLED_APPS = [
+
+DJANGO_SYSTEM_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+]
+
+CUSTOM_USER_APPS = [    
     'accounts.apps.AccountsConfig',
     'users.apps.UsersConfig',
-    'addresses.apps.AddressesConfig'
-]
+    'addresses.apps.AddressesConfig',
+    'rest_framework'
+    ]
+
+INSTALLED_APPS = DJANGO_SYSTEM_APPS + CUSTOM_USER_APPS
 
 # client 가 request 요청을하면 urldispatcher가 view에서 response를 반환한다.
 # 해당 작업에 연관된 전처리를 해준다. 
