@@ -47,7 +47,8 @@ CUSTOM_USER_APPS = [
     'accounts.apps.AccountsConfig',
     'users.apps.UsersConfig',
     'addresses.apps.AddressesConfig',
-    'rest_framework'
+    'rest_framework',
+    'rest_framework.authtoken'
     ]
 
 INSTALLED_APPS = DJANGO_SYSTEM_APPS + CUSTOM_USER_APPS
