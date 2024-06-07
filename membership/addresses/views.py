@@ -8,7 +8,7 @@ from .models import Address
 from .serializer import AddressSerializer
 
 class Addresses(APIView) :
-    authentication_classes = [TokenAuthentication]
+    # authentication_classes = [TokenAuthentication]
     permission_classes = [IsAuthenticated]
 
     def get(self, request) :
